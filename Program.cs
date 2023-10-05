@@ -28,7 +28,23 @@
             Console.WriteLine($"Potrzebujemy {daysMetal} dni żeby zutylizować Twój metal");
             Console.WriteLine($"Potrzebujemy {daysOther} dni żeby zutylizować Twój metal");
 
+            double daysTotal = Math.Max(daysPaper, Math.Max(daysMetal, daysOther));
 
+            Console.WriteLine($"\nPotrzebujemy w sumie {daysTotal} dni na zutylizowanie Twoich odpadów.\n");
+            Console.WriteLine("Mamy dokupić kolejne maszyny? (T/N)");
+            string userChoiceNewMachines = Console.ReadLine().ToUpper();
+            switch (userChoiceNewMachines)
+            {
+                case "T":
+                    Console.WriteLine("Dobra dokupimy po jednej maszynie każdego rodzaju.");
+                    break;
+                case "N":
+                    Console.WriteLine("Nie to nie. To se Pan czekaj.");
+                    break;
+                default:
+                    Console.WriteLine("Postaraj się bardziej wybierz literkę 't' lub 'n'.");
+                    break;
+            }
 
         }
     }
