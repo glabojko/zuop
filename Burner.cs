@@ -8,5 +8,16 @@ namespace zuop
 {
     public class Burner
     {
+        double DailyBurningCapacity { get; set; }
+
+        public Burner(double dailyBurningCapacity)
+        {
+            DailyBurningCapacity = dailyBurningCapacity;
+        }
+
+        public double GetCapacity()
+        {
+            return DailyBurningCapacity;
+        }
     }
 }

@@ -8,5 +8,16 @@ namespace zuop
 {
     public class Squeezer
     {
+        double DailySqueezingCapacity { get; set; }
+
+        public Squeezer(double dailySqueezingCapacity)
+        {
+            DailySqueezingCapacity = dailySqueezingCapacity;
+        }
+
+        public double GetCapacity()
+        {
+            return DailySqueezingCapacity;
+        }
     }
 }
