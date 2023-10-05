@@ -8,5 +8,16 @@ namespace zuop
 {
     internal class Shredder
     {
+        double DailyCapacity { get; set; }
+
+        public Shredder(double dailyCapacity)
+        {
+            DailyCapacity = dailyCapacity;
+        }
+
+        public double GetCapacity()
+        {
+            return DailyCapacity;
+        }
     }
 }

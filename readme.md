@@ -10,4 +10,4 @@ zgniatarka - 10 ton dziennie
 rozdrabniarka - 30 ton dziennie
 spalarnia - 5 ton dziennie.
 DLa podanych przez usera wartości odpadów podaj ilość dni potrzebnych do ich przetworzenia przez zakład utylizacji.
-Jako dodatkowy feature - podaj o ile zwiększyła by  się procentowo wydajność zakładu, gdyby dokupił po jeden maszynie z każdego rodzaju.
+Jako dodatkowy feature - podaj o ile zwiększyła by się procentowo wydajność zakładu, gdyby dokupił po jeden maszynie z każdego rodzaju.
