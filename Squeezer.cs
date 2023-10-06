@@ -6,18 +6,10 @@ using System.Threading.Tasks;
 
 namespace zuop
 {
-    public class Squeezer
+    public class Squeezer : Machine
     {
-        double DailySqueezingCapacity { get; set; }
-
-        public Squeezer(double dailySqueezingCapacity)
-        {
-            DailySqueezingCapacity = dailySqueezingCapacity;
-        }
-
-        public double GetCapacity()
-        {
-            return DailySqueezingCapacity;
+         public Squeezer(double dailyCapacity) : base (dailyCapacity) 
+        { 
         }
     }
 }

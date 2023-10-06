@@ -6,18 +6,10 @@ using System.Threading.Tasks;
 
 namespace zuop
 {
-    public class Burner
+    public class Burner : Machine
     {
-        double DailyBurningCapacity { get; set; }
-
-        public Burner(double dailyBurningCapacity)
+        public Burner(double dailyCapacity) : base(dailyCapacity)
         {
-            DailyBurningCapacity = dailyBurningCapacity;
-        }
-
-        public double GetCapacity()
-        {
-            return DailyBurningCapacity;
         }
     }
 }

@@ -6,18 +6,10 @@ using System.Threading.Tasks;
 
 namespace zuop
 {
-    internal class Shredder
+    internal class Shredder : Machine
     {
-        double DailyShreddingCapacity { get; set; }
-
-        public Shredder(double dailyShreddingCapacity)
+        public Shredder(double dailyCapacity) : base (dailyCapacity)
         {
-            DailyShreddingCapacity = dailyShreddingCapacity;
-        }
-
-        public double GetCapacity()
-        {
-            return DailyShreddingCapacity;
         }
     }
 }
